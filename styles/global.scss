@@ -1,0 +1,15 @@
+// Global Styling
+.box {
+  z-index: 2;
+}
+
+.blob {
+  position: absolute;
+  content: '';
+  right: -24%;
+  top: -5rem;
+  transform: scale(1.5);
+  width: 85%;
+  height: 100vh;
+  z-index: -1;
+}
