@@ -8,7 +8,7 @@ module.exports = {
         primary: '#11C7B3',
         light: '#ECF8F6',
         medium: '#B7FBF4',
-        yellow: '#F4B886',
+        lighter: '#14B8A7',
       },
       fontFamily: {
         sans: ['Raleway', 'sans-serif'],

@@ -17,7 +17,7 @@ const Header = ({}) => {
             <p className="text-xl font-medium text-gray-500 lg:leading-snug max-w-lg mt-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas odit consectetur, voluptate commodi
             </p>
-            <Button className="bg-primary text-xl px-10 py-3 border-white text-white mt-10">Get Started</Button>
+            <Button className="bg-primary text-xl px-14 py-4 border-white text-white mt-10">Get Started</Button>
           </div>
           <div>
             <TeamIcon />

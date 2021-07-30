@@ -55,7 +55,7 @@ const Login = ({}) => {
             </Link>
           </div>
         </div>
-        <div className="w-full h-full bg-medium pt-10 2xl:pt-32 px-32 text-center">
+        <div className="w-full h-full relative bg-medium pt-10 2xl:pt-32 px-32 text-center">
           <span className="text-gray-500 font-semibold text-2xl">Nice to see you again</span>
           <h1 className="text-primary text-6xl font-bold mt-8">Welcome back</h1>
           <LoginIcon height={570} className="mx-auto mt-10" />
