@@ -1,6 +1,8 @@
 // Global Styling
-.box {
-  z-index: 2;
+@import './fonts.scss';
+
+body {
+  overflow-x: hidden;
 }
 
 .blob {
@@ -12,4 +14,26 @@
   width: 85%;
   height: 100vh;
   z-index: -1;
+}
+
+.explore-card:hover h1 {
+  color: #11c7b3;
+}
+
+.banner {
+  background-image: url('../public/images/banner.jpg');
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+// .explore-card:hover p {
+//   color: #fff;
+// }
+
+.banner-login {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), #11c7b3), url('../public/images/banner2.jpg');
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

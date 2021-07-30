@@ -6,11 +6,19 @@ module.exports = {
     extend: {
       colors: {
         primary: '#11C7B3',
+        light: '#ECF8F6',
+        medium: '#B7FBF4',
+        yellow: '#F4B886',
+      },
+      fontFamily: {
+        sans: ['Raleway', 'sans-serif'],
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      divideColor: ['group-hover'],
+    },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/custom-forms')],
 };
