@@ -8,12 +8,12 @@ const ProfileCard = ({ children }) => {
     <div className="w-full bg-white shadowed overflow-hidden rounded-2xl clear-both">
       <div className="h-80 2xl:h-96 w-full bg-cover relative">
         <div className="overlay w-full h-full absolute bg-black opacity-40 z-10"></div>
-        <Image src="/images/user-profile-banner.jpg" layout="fill" className="object-cover" />
+        <Image src="/images/user-profile-banner.jpg" layout="fill" className="object-cover object-left-top" />
       </div>
       <div className="content px-10">
         <div className="user-details flex z-20 -mt-16">
           <div className="w-32 rounded-full gradient overflow-hidden h-32 z-20 object-cover relative">
-            <Image src="/images/profile.jpg" layout="fill" className="object-cover gradient" />
+            <Image src="/images/profile.jpg" layout="fill" className="object-cover object-top" />
           </div>
           <div className="ml-7 z-20">
             <h1 className="text-white mt-3 text-2xl">James Smith</h1>

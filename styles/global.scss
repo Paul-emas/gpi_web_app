@@ -36,7 +36,11 @@ body {
 }
 
 .sidebar {
-  width: 284px;
+  width: 224px;
+}
+
+.mentions {
+  width: 320px;
 }
 
 .shadowed {
@@ -44,5 +48,16 @@ body {
 }
 
 .gradient {
-  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+}
+
+@screen 2xl {
+  .sidebar {
+    width: 224px;
+  }
+
+  .mentions {
+    width: 400px;
+  }
 }
