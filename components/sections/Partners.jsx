@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Partners = ({}) => {
   return (
-    <div className="">
+    <div id="partners" className="">
       <div className="container mx-auto px-10">
         <div className="grid grid-cols-3 gap-x-7 max-w-2xl mx-auto">
           <div>

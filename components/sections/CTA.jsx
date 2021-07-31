@@ -1,6 +1,6 @@
+import Link from 'next/link';
 import React from 'react';
 
-import SubscribeIcon from '../../assets/subscribe.svg';
 import Button from '../Button';
 
 const CTA = ({}) => {
@@ -13,7 +13,11 @@ const CTA = ({}) => {
               Ready to get started? Sign up now!
             </h1>
             <div>
-              <Button className="bg-primary px-10 py-3 text-xl mt-20 border-primary text-white">Get Started</Button>
+              <Link href="/register">
+                <a>
+                  <Button className="bg-primary px-10 py-3 text-xl mt-20 border-primary text-white">Get Started</Button>
+                </a>
+              </Link>
             </div>
           </div>
         </div>

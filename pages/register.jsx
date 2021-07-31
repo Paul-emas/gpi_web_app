@@ -1,21 +1,24 @@
 import React from 'react';
-import NavBar from '../components/Navbar';
+import Link from 'next/link';
+import Image from 'next/image';
 
 import SpaceIcon from '../assets/register.svg';
 import Button from '../components/Button';
-import Link from 'next/link';
 
 const Register = ({}) => {
   return (
     <div className="fixed bg-medium h-screen overflow-hidden w-full">
-      <NavBar />
       <div className="flex bg-white h-full">
-        <div className="w-2/3 pt-32 px-10 2xl:px-24 overflow-y-auto pb-10">
-          <h1 className="text-4xl font-bold text-gray-800">Register.</h1>
+        <div className="w-full lg:w-2/3 px-10 pt-5 lg:max-w-xl mx-auto xl:mx-0 2xl:px-24 overflow-y-auto pb-10">
+          <Link href="/">
+            <a>
+              <Image src="/images/logo.png" width={250} height={40} className="object-cover" />
+            </a>
+          </Link>
+          <h1 className="text-4xl pt-16 font-bold text-gray-800">Register.</h1>
           <p className="text-xl text-gray-400 mt-3 max-w-sm">
             Sign up now and get the benefits that comes with partnering with us
           </p>
-
           <form action="" className="mt-20">
             <div className="flex flex-col">
               <label htmlFor="email" className="text-gray-600 font-semibold">
@@ -48,7 +51,13 @@ const Register = ({}) => {
                 className="py-3.5 bg-white px-7 border focus:border-primary outline-none mt-2 rounded-lg"
               />
             </div>
-            <Button className="w-full bg-primary border-primary py-3.5 text-white mt-10">Register</Button>
+            <Link href="/dashboard">
+              <a>
+                <Button type="submit" className="w-full bg-primary border-primary py-3.5 text-white mt-10">
+                  Register
+                </Button>
+              </a>
+            </Link>
           </form>
           <div className="py-10 border-b flex flex-col items-center">
             <label class="flex items-center cursor-pointer">
@@ -64,10 +73,14 @@ const Register = ({}) => {
             </label>
           </div>
           <div className="flex justify-center">
-            <Button className="bg-white border-primary py-3.5 px-12 text-primary mt-10">Sign in</Button>
+            <Link href="/login">
+              <a>
+                <Button className="bg-white border-primary py-3.5 px-12 text-primary mt-10">Sign in</Button>
+              </a>
+            </Link>
           </div>
         </div>
-        <div className="w-full h-full bg-medium pt-10 2xl:pt-32 px-32 text-center">
+        <div className="w-full h-full xl:block hidden bg-medium pt-10 2xl:pt-32 px-32 text-center">
           <span className="text-gray-500 font-semibold text-2xl">Want to be part of something great</span>
           <h1 className="text-primary text-6xl font-bold mt-8">Join us now!</h1>
           <SpaceIcon height={570} className="mx-auto mt-10" />

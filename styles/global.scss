@@ -1,6 +1,10 @@
 // Global Styling
 @import './fonts.scss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -25,4 +29,20 @@ body {
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.main {
+  margin-top: 4.8rem;
+}
+
+.sidebar {
+  width: 284px;
+}
+
+.shadowed {
+  box-shadow: 0px 50px 77px rgba(176, 183, 195, 0.22);
+}
+
+.gradient {
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }

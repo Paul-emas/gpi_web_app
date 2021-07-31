@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 import Button from './Button';
 
-const NavBar = ({ children }) => {
+const NavBar = ({ className, align, children }) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     window.onscroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 10) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -18,9 +18,9 @@ const NavBar = ({ children }) => {
   }, []);
 
   return (
-    <div className={`${scrolled ? 'bg-white border-b z-10' : ''} w-full py-1.5 fixed left-0 top-0`}>
-      <div className="container mx-auto px-8">
-        <div className="flex items-center justify-between h-16">
+    <div className={`${scrolled ? 'bg-white border-b' : ''} ${className} w-full z-50 py-1.5 fixed left-0 top-0`}>
+      <div className="container mx-auto lg:px-8">
+        <div className={`${align} flex items-center h-16`}>
           <Link href="/">
             <a>
               <Image src="/images/logo.png" width={250} height={40} className="object-cover" />

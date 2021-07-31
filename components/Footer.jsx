@@ -7,11 +7,10 @@ import Twitter from '/assets/twitter.svg';
 import Youtube from '/assets/youtube.svg';
 
 const routes = [
-  { name: 'What we do', link: '/#wedo' },
-  { name: 'About us', link: '/about' },
-  { name: 'FAQS', link: '/#faq' },
-  { name: 'Blog', link: '/' },
-  { name: 'Contact', link: '/about/#contact' },
+  { name: 'Explore', link: '/#explore' },
+  { name: 'About us', link: '/#about' },
+  { name: 'FAQs', link: '/' },
+  { name: 'Contact us', link: '/' },
 ];
 
 const Footer = ({}) => {
@@ -20,9 +19,9 @@ const Footer = ({}) => {
       <div className="container mx-auto space-y-14 px-10">
         <div className="relative my-3.5 max-w-xl flex justify-center mx-auto">
           <Link href="/">
-            <div>
+            <a>
               <Image src="/images/logo.png" width={250} height={40} className="object-cover" />
-            </div>
+            </a>
           </Link>
         </div>
         <div className="flex flex-wrap justify-center mt-14 text-lg text-gray-500 font-medium items-center gap-y-5 gap-x-14">

@@ -1,17 +1,21 @@
 import React from 'react';
-import NavBar from '../components/Navbar';
+import Link from 'next/link';
+import Image from 'next/image';
 
 import LoginIcon from '../assets/auth.svg';
 import Button from '../components/Button';
-import Link from 'next/link';
 
 const Login = ({}) => {
   return (
     <div className="fixed h-screen overflow-hidden bg-medium w-full">
-      <NavBar />
       <div className="flex h-full bg-white">
-        <div className="w-2/3 h-full pt-32 px-10 overflow-y-auto 2xl:px-24">
-          <h1 className="text-4xl font-bold text-gray-800">Sign in.</h1>
+        <div className="w-full lg:w-2/3 h-full px-10 pt-5 pb-10 lg:max-w-xl mx-auto xl:mx-0 overflow-y-auto 2xl:px-24">
+          <Link href="/">
+            <a>
+              <Image src="/images/logo.png" width={250} height={40} className="object-cover" />
+            </a>
+          </Link>
+          <h1 className="text-4xl pt-16 font-bold text-gray-800">Sign in.</h1>
           <p className="text-xl text-gray-400 mt-3 max-w-sm">Log in with the data you entered during in registration</p>
 
           <form action="" className="mt-20">
@@ -35,7 +39,11 @@ const Login = ({}) => {
                 className="py-3.5 bg-white px-7 border focus:border-primary outline-none mt-2 rounded-lg"
               />
             </div>
-            <Button className="w-full bg-primary border-primary py-3.5 text-white mt-10">Sign in</Button>
+            <Link href="/dashboard">
+              <a>
+                <Button className="w-full bg-primary border-primary py-3.5 text-white mt-10">Sign in</Button>
+              </a>
+            </Link>
           </form>
           <div className="py-16 border-b flex flex-col items-center">
             <label class="flex items-center cursor-pointer">
@@ -51,11 +59,13 @@ const Login = ({}) => {
           </div>
           <div className="flex justify-center">
             <Link href="/register">
-              <Button className="bg-white border-primary py-3.5 px-12 text-primary mt-10">Sign up</Button>
+              <a>
+                <Button className="bg-white border-primary py-3.5 px-12 text-primary mt-10">Sign up</Button>
+              </a>
             </Link>
           </div>
         </div>
-        <div className="w-full h-full relative bg-medium pt-10 2xl:pt-32 px-32 text-center">
+        <div className="w-full h-full xl:block hidden relative bg-medium pt-10 2xl:pt-32 px-32 text-center">
           <span className="text-gray-500 font-semibold text-2xl">Nice to see you again</span>
           <h1 className="text-primary text-6xl font-bold mt-8">Welcome back</h1>
           <LoginIcon height={570} className="mx-auto mt-10" />
