@@ -16,7 +16,7 @@ const routes = [
 const Footer = ({}) => {
   return (
     <div className="bg-lightBlue py-16 lg:py-20">
-      <div className="container mx-auto space-y-14 px-10">
+      <div className="container mx-auto space-y-14 px-7 lg:px-10">
         <div className="relative my-3.5 max-w-xl flex justify-center mx-auto">
           <Link href="/">
             <a>
@@ -24,9 +24,9 @@ const Footer = ({}) => {
             </a>
           </Link>
         </div>
-        <div className="flex flex-wrap justify-center mt-14 text-lg text-gray-500 font-medium items-center gap-y-5 gap-x-14">
+        <div className="flex flex-wrap justify-center mt-14 lg:text-lg text-gray-500 font-medium items-center gap-y-5 gap-x-14">
           {routes.map(({ name, link }) => (
-            <Link href={link} key={link}>
+            <Link href={link} key={name}>
               <a>{name}</a>
             </Link>
           ))}
@@ -36,7 +36,7 @@ const Footer = ({}) => {
           <Twitter className="h-7" />
           <Youtube className="h-7" />
         </div>
-        <p className="text-lg text-gray-500 text-center font-medium">
+        <p className="text-sm lg:text-lg text-gray-500 text-center font-medium">
           © 2020 All Rights Reserved. Lagos Innovates IdeaHub
         </p>
       </div>

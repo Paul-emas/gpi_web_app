@@ -60,12 +60,12 @@ const Register = ({}) => {
             </Link>
           </form>
           <div className="py-10 border-b flex flex-col items-center">
-            <label class="flex items-center cursor-pointer">
+            <label className="flex items-center cursor-pointer">
               <input
                 type="checkbox"
                 className="form-checkbox relative -top-3 h-5 w-5 border-2 border-primary rounded-lg focus:border-primary text-primary"
               />
-              <span class="ml-2 font-medium max-w-xl text-gray-500 text-center">
+              <span className="ml-2 font-medium max-w-xl text-gray-500 text-center">
                 By clicking register, you agree to our <span class="text-primary">Terms and Conditions,</span>{' '}
                 <span className="text-primary">Privacy Policy,</span> and{' '}
                 <span className="text-primary">Mobile Internet Safety Policy</span>

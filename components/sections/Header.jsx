@@ -7,24 +7,26 @@ import Link from 'next/link';
 
 const Header = ({}) => {
   return (
-    <section className="header top-16">
-      <BlobIcon className="blob" />
-      <div className="container mx-auto xl:px-10 pt-32 2xl:pt-32">
+    <section className="header">
+      <BlobIcon className="blob hidden lg:block" />
+      <div className="container mx-auto px-8 md:px-0 xl:px-10 pt-10 xl:pt-32 2xl:pt-32">
         <div className="grid xl:grid-cols-2">
-          <div className="mt-36 2xl:mt-44">
-            <h1 className="text-7xl text-gray-800 font-bold max-w-xl leading-snug">
+          <div className="md:text-center xl:text-left mx-auto xl:ml-0 mt-16 lg:mt-28 xl:mt-36 2xl:mt-44">
+            <h1 className="text-5xl lg:text-7xl text-gray-800 font-bold max-w-full lg:max-w-xl leading-tight lg:leading-snug">
               We Bring <span className="text-primary">Ideas</span> to <span className="text-primary">Market</span>Place
             </h1>
-            <p className="text-xl font-medium text-gray-500 lg:leading-snug max-w-lg mt-3">
+            <p className="text-base lg:text-xl font-medium text-gray-500 lg:leading-snug max-w-lg mt-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas odit consectetur, voluptate commodi
             </p>
             <Link href="/register">
               <a>
-                <Button className="bg-primary text-xl px-14 py-4 border-white text-white mt-10">Get Started</Button>
+                <Button className="bg-primary text-base lg:text-xl px-14 py-4 border-white text-white mt-7 lg:mt-10">
+                  Get Started
+                </Button>
               </a>
             </Link>
           </div>
-          <div>
+          <div className="mt-8 lg:mt-0">
             <TeamIcon />
           </div>
         </div>

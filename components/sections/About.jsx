@@ -24,13 +24,13 @@ const aboutData = [
 
 const About = ({}) => {
   return (
-    <div id="about" className="bg-white py-32">
-      <div className="container mx-auto px-10">
-        <div className="max-w-2xl mx-auto text-center">
-          <h1 className="text-6xl font-bold">
+    <div id="about" className="bg-white py-16 lg:py-32">
+      <div className="container mx-auto px-7 lg:px-10">
+        <div className="max-w-2xl mx-auto lg:text-center">
+          <h1 className="text-4xl lg:text-6xl font-bold">
             <span className="text-primary">Engage</span> with IdeaHub
           </h1>
-          <p className="text-lg text-gray-400 max-w-lg mx-auto mt-4">
+          <p className="lg:text-lg text-gray-400 max-w-lg mx-auto mt-4">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem ullam, ratione dolor ipsum
           </p>
         </div>
@@ -38,12 +38,12 @@ const About = ({}) => {
           {aboutData.map(({ title, content, icon }) => {
             const Icon = icon;
             return (
-              <div className="text-center">
-                <div className="flex justify-center">
+              <div key={title} className="lg:text-center">
+                <div className="flex lg:justify-center">
                   <Icon height="280" />
                 </div>
                 <h1 className="text-2xl mt-2 font-semibold capitalize text-gray-700">{title}</h1>
-                <p className="text-md mt-2 px-10 text-gray-500">{content}</p>
+                <p className="text-md mt-2 px-0 lg:px-10 text-gray-500">{content}</p>
               </div>
             );
           })}

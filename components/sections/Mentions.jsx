@@ -3,14 +3,14 @@ import React from 'react';
 const recentMentors = [
   { name: 'Monday Miller', active: true },
   { name: 'Maria Luli', active: true },
-  { name: 'Logan James', active: true },
+  { name: 'Logan James' },
 ];
 
 const mentors = [
   { name: 'Monday Miller', active: true },
   { name: 'Maria Luli', active: true },
-  { name: 'Logan James', active: true },
-  { name: 'Ola Olaoluwa', active: true },
+  { name: 'Logan James' },
+  { name: 'Ola Olaoluwa' },
   { name: 'Bolu James', active: true },
 ];
 
@@ -20,8 +20,11 @@ const Mentions = ({}) => {
       <div className="pt-5">
         <div className="caption py-5 text-sm text-gray-400">Recent Mentors</div>
         <div className="links flex w-full flex-col">
-          {recentMentors.map(({ name, active }) => (
-            <div className="inline-flex items-center border-2 border-white duration-200 cursor-pointer hover:bg-gray-100 hover:px-2 2xl:hover:px-4 rounded-2xl py-2">
+          {recentMentors.map(({ name, active }, index) => (
+            <div
+              key={name}
+              className="inline-flex items-center border-2 border-white duration-200 cursor-pointer hover:bg-gray-100 hover:px-4 rounded-2xl py-2"
+            >
               <div>
                 <div className="w-12 h-12 rounded-full font-bold text-center py-3 text-white gradient">FD</div>
               </div>
@@ -35,8 +38,11 @@ const Mentions = ({}) => {
         <div className="pt-5">
           <div className="caption py-5 text-sm text-gray-400">Mentors</div>
           <div className="links flex w-full flex-col">
-            {mentors.map(({ name, active }) => (
-              <div className="inline-flex items-center border-2 border-white duration-200 cursor-pointer hover:bg-gray-100 hover:px-2 2xl:hover:px-4 rounded-2xl py-2">
+            {mentors.map(({ name, active }, index) => (
+              <div
+                key={name}
+                className="inline-flex items-center border-2 border-white duration-200 cursor-pointer hover:bg-gray-100 px-2 2xl:hover:px-4 rounded-2xl py-2"
+              >
                 <div>
                   <div className="w-12 h-12 rounded-full font-bold text-center py-3 text-white gradient">FD</div>
                 </div>

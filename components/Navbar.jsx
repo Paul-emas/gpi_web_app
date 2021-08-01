@@ -18,15 +18,24 @@ const NavBar = ({ className, align, children }) => {
   }, []);
 
   return (
-    <div className={`${scrolled ? 'bg-white border-b' : ''} ${className} w-full z-50 py-1.5 fixed left-0 top-0`}>
-      <div className="container mx-auto lg:px-8">
+    <div
+      className={`${
+        scrolled ? 'bg-white border-b' : 'bg-white xl:bg-transparent'
+      } ${className} w-full z-50 py-1.5 fixed left-0 top-0`}
+    >
+      <div className="container mx-auto px-7 md:px-0 xl:px-8">
         <div className={`${align} flex items-center h-16`}>
           <Link href="/">
-            <a>
-              <Image src="/images/logo.png" width={250} height={40} className="object-cover" />
+            <a className="-ml-3">
+              <Image
+                src="/images/logo.png"
+                width={250}
+                height={40}
+                className="object-cover transform scale-90 lg:scale-100"
+              />
             </a>
           </Link>
-          <div className="inline-flex gap-x-5 text-base font-medium text-gray-500 items-center">{children}</div>
+          {children}
         </div>
       </div>
     </div>

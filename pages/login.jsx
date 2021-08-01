@@ -7,18 +7,25 @@ import Button from '../components/Button';
 
 const Login = ({}) => {
   return (
-    <div className="fixed h-screen overflow-hidden bg-medium w-full">
+    <div className="lg:fixed h-screen overflow-hidden bg-medium w-full">
       <div className="flex h-full bg-white">
-        <div className="w-full lg:w-2/3 h-full px-10 pt-5 pb-10 lg:max-w-xl mx-auto xl:mx-0 overflow-y-auto 2xl:px-24">
+        <div className="w-full lg:w-2/3 h-full px-7 lg:px-10 pt-5 pb-10 lg:max-w-xl mx-auto xl:mx-0 overflow-y-auto 2xl:px-24">
           <Link href="/">
-            <a>
-              <Image src="/images/logo.png" width={250} height={40} className="object-cover" />
+            <a className="-ml-3s">
+              <Image
+                src="/images/logo.png"
+                width={250}
+                height={40}
+                className="object-cover transform scale-90 lg:scale-100"
+              />
             </a>
           </Link>
-          <h1 className="text-4xl pt-16 font-bold text-gray-800">Sign in.</h1>
-          <p className="text-xl text-gray-400 mt-3 max-w-sm">Log in with the data you entered during in registration</p>
+          <h1 className="text-3xl lg:text-4xl pt-16 font-bold text-gray-800">Sign in.</h1>
+          <p className="lg:text-xl text-gray-400 mt-3 max-w-sm">
+            Log in with the data you entered during in registration
+          </p>
 
-          <form action="" className="mt-20">
+          <form action="" className="mt-10 lg:mt-20">
             <div className="flex flex-col">
               <label htmlFor="email" className="text-gray-600 font-semibold">
                 Enter Your Email or Username
@@ -45,16 +52,18 @@ const Login = ({}) => {
               </a>
             </Link>
           </form>
-          <div className="py-16 border-b flex flex-col items-center">
-            <label class="flex items-center cursor-pointer">
+          <div className="py-10 lg:py-16 border-b flex flex-col items-center">
+            <label className="flex items-center cursor-pointer">
               <input
                 type="checkbox"
                 className="form-checkbox h-5 w-5 border-2 border-primary rounded-lg focus:border-primary text-primary"
               />
-              <span class="ml-2 font-medium text-gray-500">Use password for logging into my account</span>
+              <span className="ml-2 font-medium text-sm lg:text-base text-gray-500">
+                Use password for logging into my account
+              </span>
             </label>
             <Link href="/">
-              <a class="text-primary text-lg mt-4">Forgot Password?</a>
+              <a className="text-primary text-md lg:text-lg mt-4">Forgot Password?</a>
             </Link>
           </div>
           <div className="flex justify-center">

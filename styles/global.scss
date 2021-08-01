@@ -26,7 +26,7 @@ body {
 
 .banner {
   background-image: url('../public/images/banner.jpg');
-  background-size: 200%;
+  background-size: 462%;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .mentions {
-  width: 320px;
+  width: 340px;
 }
 
 .shadowed {
@@ -50,6 +50,12 @@ body {
 .gradient {
   background-color: #20bf55;
   background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+}
+
+@screen xl {
+  .banner {
+    background-size: 200%;
+  }
 }
 
 @screen 2xl {
