@@ -42,8 +42,8 @@ const About = ({}) => {
                 <div className="flex lg:justify-center">
                   <Icon height="280" />
                 </div>
-                <h1 className="text-2xl mt-2 font-semibold capitalize text-gray-700">{title}</h1>
-                <p className="text-md mt-2 px-0 lg:px-10 text-gray-500">{content}</p>
+                <h1 className="text-xl lg:text-2xl mt-4 font-semibold capitalize text-gray-700">{title}</h1>
+                <p className="text-sm lg:text-md mt-2 px-0 lg:px-10 text-gray-500">{content}</p>
               </div>
             );
           })}
