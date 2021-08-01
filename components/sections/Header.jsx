@@ -12,7 +12,7 @@ const Header = ({}) => {
       <div className="container mx-auto px-8 md:px-0 xl:px-10 pt-10 xl:pt-32 2xl:pt-32">
         <div className="grid xl:grid-cols-2">
           <div className="md:text-center xl:text-left mx-auto xl:ml-0 mt-16 lg:mt-28 xl:mt-36 2xl:mt-44">
-            <h1 className="text-5xl lg:text-7xl text-gray-800 font-bold max-w-full lg:max-w-xl leading-tight lg:leading-snug">
+            <h1 className="text-5xl lg:text-7xl text-gray-800 font-bold max-w-xs lg:max-w-xl leading-tight lg:leading-snug">
               We Bring <span className="text-primary">Ideas</span> to <span className="text-primary">Market</span>Place
             </h1>
             <p className="text-base lg:text-xl font-medium text-gray-500 lg:leading-snug max-w-lg mt-3">

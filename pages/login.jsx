@@ -11,7 +11,7 @@ const Login = ({}) => {
       <div className="flex h-full bg-white">
         <div className="w-full lg:w-2/3 h-full px-7 lg:px-10 pt-5 pb-10 lg:max-w-xl mx-auto xl:mx-0 overflow-y-auto 2xl:px-24">
           <Link href="/">
-            <a className="-ml-3s">
+            <a className="-ml-3">
               <Image
                 src="/images/logo.png"
                 width={250}

@@ -9,17 +9,22 @@ const Register = ({}) => {
   return (
     <div className="fixed bg-medium h-screen overflow-hidden w-full">
       <div className="flex bg-white h-full">
-        <div className="w-full lg:w-2/3 px-10 pt-5 lg:max-w-xl mx-auto xl:mx-0 2xl:px-24 overflow-y-auto pb-10">
+        <div className="w-full lg:w-2/3 h-full px-7 lg:px-10 pt-5 pb-10 lg:max-w-xl mx-auto xl:mx-0 overflow-y-auto 2xl:px-24">
           <Link href="/">
-            <a>
-              <Image src="/images/logo.png" width={250} height={40} className="object-cover" />
+            <a className="-ml-3">
+              <Image
+                src="/images/logo.png"
+                width={250}
+                height={40}
+                className="object-cover transform scale-90 lg:scale-100"
+              />
             </a>
           </Link>
-          <h1 className="text-4xl pt-16 font-bold text-gray-800">Register.</h1>
-          <p className="text-xl text-gray-400 mt-3 max-w-sm">
+          <h1 className="text-3xl lg:text-4xl pt-16 font-bold text-gray-800">Register.</h1>
+          <p className="lg:text-xl text-gray-400 mt-3 max-w-sm">
             Sign up now and get the benefits that comes with partnering with us
           </p>
-          <form action="" className="mt-20">
+          <form action="" className="mt-10 lg:mt-20">
             <div className="flex flex-col">
               <label htmlFor="email" className="text-gray-600 font-semibold">
                 Enter Your Email or Username
@@ -65,8 +70,8 @@ const Register = ({}) => {
                 type="checkbox"
                 className="form-checkbox relative -top-3 h-5 w-5 border-2 border-primary rounded-lg focus:border-primary text-primary"
               />
-              <span className="ml-2 font-medium max-w-xl text-gray-500 text-center">
-                By clicking register, you agree to our <span class="text-primary">Terms and Conditions,</span>{' '}
+              <span className="ml-2 text-sm lg:text-base font-medium max-w-xl text-gray-500 text-center">
+                By clicking register, you agree to our <span className="text-primary">Terms and Conditions,</span>{' '}
                 <span className="text-primary">Privacy Policy,</span> and{' '}
                 <span className="text-primary">Mobile Internet Safety Policy</span>
               </span>
